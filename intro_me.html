@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>조동국의 포트폴리오</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Sunflower', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#77cbea+1,00ade2+30,00ade2+70,bce0ee+100 */
+            background: rgb(119,203,234); /* Old browsers */
+            background: -moz-linear-gradient(top,  rgba(119,203,234,1) 1%, rgba(0,173,226,1) 30%, rgba(0,173,226,1) 70%, rgba(188,224,238,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(119,203,234,1) 1%,rgba(0,173,226,1) 30%,rgba(0,173,226,1) 70%,rgba(188,224,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(119,203,234,1) 1%,rgba(0,173,226,1) 30%,rgba(0,173,226,1) 70%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77cbea', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+        }
+
+        body{
+            width: 1600px;
+            height: 3000px;
+            margin: 0 auto;
+        }
+
+        h1{
+            color: rgba(255,255,255,0.9);
+        }
+
+        p{
+            color: rgb(255,255,255);
+        }
+
+        /* ------------------------------------------- */
+        #sec_header{
+            width: 550px;
+            height: 70px;
+            position:fixed;
+            display:inline-block;
+            top:5px;
+            right:5px;
+            background:rgba(0,0,0,.6);
+            border-radius: 30px;
+        }
+
+        #a_main, #a_about, #a_portfolio, #a_contact, #a_nbsp{
+            font-weight: bold;
+            float: right;
+            padding: 10px;
+            color: white;
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        /* ------------------------------------------- */
+        #sec_main{
+            width: 1600px;
+            height: 800px;
+            padding-top: 100px;
+        }
+        #main_img {
+            width: 900px; height: 400px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        #sec_main h1 {
+            text-align: center;
+        }
+
+        #a_go_under {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin-top: 10px;
+            margin: 0 auto;
+        }
+        /* ------------------------------------------- */
+        #sec_about{
+            width: 1600px;
+            height: 800px;
+            padding-top: 50px;
+        }
+        .circle {
+            width: 450px;
+            height: 450px;
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgba(255,255,255,0.5);
+            border-radius: 70%;
+            overflow: hidden;
+            margin: 30px;
+            margin-right: 70px;
+            float: left;
+        }
+        .profile_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ab_name, .ab_information {
+            padding-top: 60px;
+            font-size: 20px;
+        }
+        .ab_skills {
+            padding-top: 100px;
+            text-align: center;
+        }
+        #html{
+            border: none;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background: url(Contents/images/html.png);
+            background-size: cover;
+            border-radius: 30%;
+            margin: 15px;
+        }
+
+        #css{
+            border: none;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background: url(Contents/images/css.png);
+            background-size: cover;
+            border-radius: 30%;
+            margin: 15px;
+        }
+
+        #java{
+            border: none;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background: url(Contents/images/java.png);
+            background-size: cover;
+            border-radius: 30%;
+            margin: 15px;
+        }
+
+        #c{
+            border: none;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background: url(Contents/images/c.png);
+            background-size: cover;
+            border-radius: 30%;
+            margin: 15px;
+        }
+
+        #sql{
+            border: none;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background: url(Contents/images/sql.png);
+            background-size: cover;
+            border-radius: 30%;
+            margin: 15px;
+        }
+
+        /* ------------------------------------------- */
+        #sec_portfolio{
+            width: 1600px;
+            height: 800px;
+            padding-top: 50px;
+        }
+
+        .waterDD{
+            float: left;
+            width: 600px;
+            height: 650px;
+            background: rgba(0,0,0,.6);
+            border-radius: 30px;
+            margin: 50px;
+            margin-left: 150px;
+        }
+
+        .Do_it{
+            float: left;
+            width: 600px;
+            height: 650px;
+            background: rgba(0,0,0,.6);
+            border-radius: 5%;
+            margin: 50px;
+        }
+
+        .pfbf_img{
+            width: 28%;
+            height: 52%;
+            float: left;
+            margin-right: 50px;
+            margin-top: 15px;
+            margin-left: 80px;
+            margin-bottom: 25px;
+        }
+
+        .pfaf_img{
+            width: 28%;
+            height: 52%;
+            float: right;
+            margin-left: 50px;
+            margin-top: 15px;
+            margin-right: 80px;
+            margin-bottom: 25px;
+        }
+
+        .pf_p{
+            text-align: center;
+            font-size: 16px;
+        }
+
+        #pf_title1, #pf_title2{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #btn_wd_git, #btn_di_git{
+            float: right;
+            border: none;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background: url(Contents/images/git.png);
+            background-size: cover;
+            border-radius: 30%;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* ------------------------------------------- */
+
+        #sec_contact{
+            width: 1600px;
+            height: 300px;
+        }
+        .ct_content{
+            color: #000;
+        }
+        #p_thx{
+            float: right;
+            font-size: 50px;
+            padding-right: 100px;
+        }
+        #p_email, #p_kID, #p_ct1, #p_ct2{
+            font-size: 18px;
+            margin: 5px;
+            margin-left: 30px;
+        }
+
+        /* ------------------------------------------- */
+        #sec_footer{
+            width: 1600px;
+            height: 70px;
+            position:fixed;
+            bottom: 5px;
+            display:inline-block;
+            background:rgba(0,0,0,.6);
+            border-radius: 30px;
+        }
+
+        #p_powerd{
+            padding-top: 10px;
+            padding-left: 30px;
+            float: left;
+            color: #fff;
+        }
+
+        #btn_git{
+            float: right;
+            border: none;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background: url(Contents/images/git.png);
+            background-size: cover;
+            border-radius: 30%;
+            margin-top: 16px;
+            margin-right: 30px;
+        }
+
+        #btn_nb{
+            float: right;
+            border: none;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background: url(Contents/images/naver.png);
+            background-size: cover;
+            border-radius: 30%;
+            margin-top: 16px;
+            margin-right: 30px;
+        }
+
+        /* ------------------------------------------- */
+
+    </style>
+</head>
+<body>
+<section id="sec_header">
+    <a id = "a_nbsp">&nbsp;|</a>
+    <a href = #sec_contact id = "a_contact">Contact</a><a id = "a_nbsp">&nbsp;|</a>
+    <a href = #sec_portfolio id = "a_portfolio">Portfolio</a><a id = "a_nbsp">&nbsp;|</a>
+    <a href = #sec_about id = "a_about">About</a><a id = "a_nbsp">&nbsp;|</a>
+    <a href = #sec_main id = a_main>Main</a><a id = "a_nbsp">&nbsp;|</a>
+</section>
+
+<section id="sec_main">
+    <img src="Contents/images/Programming.png" id="main_img" />
+    <h1> 조동국의 포트폴리오 페이지 입니다. </h1> <br>
+
+    <a href = #sec_about id = "a_go_under"><img src="Contents/images/down_btn.jpg"/></a>
+</section>
+
+<section id="sec_about">
+    <h1><-About-></h1>
+    <div class="ab_profile">
+        <div class="circle">
+            <img class="profile_img" src="Contents/images/profile_img.jpg"/>
+        </div>
+    </div>
+    <div class="ab_name">
+        <h1 class="ab_intro_name">조동국<br><br>Jo Dong Guk<br></h1>
+    </div>
+
+    <div class="ab_information">
+        <p>어렸을 때 부터 컴퓨터에 대한 것들을 좋아했어서, 많은 관심을 가지게 된게 개발자로 진로를 결정하게된 요인이었던것 같습니다.</p>
+        <p>궁금한 것들이 너무 많아서 이것저것 배우고 활용하는 것을 정말 좋아합니다.</p>
+        <p>계속해서 열심히 공부하고 어느 부분에서든 모르는 게 없는 개발자가 되고 싶습니다.</p>
+    </div>
+
+    <div class="ab_skills">
+        <h1>SKILLS</h1>
+        <button id = "html"/> <button id = "css"/> <button id = "java"/>  <button id = "c"/> <button id = "sql"/>
+    </div>
+
+</section>
+
+<section id="sec_portfolio">
+    <h1><-Portfolio-></h1>
+    <div class="waterDD">
+        <p class="pf_p" id="pf_title1">물 마시는 습관</p>
+        <img class="pfbf_img" src="Contents/images/wd_main.jpg"> <img class="pfaf_img" src="Contents/images/wd_pop.jpg">
+        <p class="pf_p">
+            프로젝트 기간<br>
+            - 2020/08 ~ 2020/12<br>
+            개발 환경<br>
+            - Android Studio 이용<br>
+            - 팀과 함께했던 졸업작품 프로젝트입니다.<br>
+            개발 언어 및 라이브러리<br>
+            - Java, WaterView, Firebase, Git<br>
+        </p>
+        <button id = "btn_wd_git" onclick = "location.href = 'https://github.com/ppusda/WaterDD'">
+    </div>
+    <div class="Do_it">
+        <p class="pf_p" id="pf_title2">할 일 기록</p>
+        <img class="pfbf_img" src="Contents/images/doit_main.jpg"> <img class="pfaf_img" src="Contents/images/doit_cpl.jpg">
+        <p class="pf_p">
+            프로젝트 기간<br>
+            - 2021/02 ~ 2021/03<br>
+            개발 환경<br>
+            - Android Studio 이용<br>
+            - 할 일에 대해서 기록하고 완료한 항목을 확인 할 수 있는 앱입니다.<br>
+            개발 언어 및 라이브러리<br>
+            - Kotlin, SQLite, Git<br>
+        </p>
+        <button id = "btn_di_git" onclick = "location.href = 'https://github.com/ppusda/Do_list'">
+    </div>
+</section>
+
+<section id="sec_contact">
+    <h1 class="ct_content"><-Contact-></h1>
+    <p class="ct_content" id="p_thx"> Thank You <br> For Wathching! </p> <br>
+    <p class="ct_content" id="p_email">Email : <a href="mailto:ppusda1234@gmail.com" id = "my_email">ppusda1234@gmail.com</a> <br> </p> <br>
+    <p class="ct_content" id="p_kID">Kakao ID : ppusda</p> <br>
+    <p class="ct_content" id="p_ct1">끈기를 가지고 항상 열심히 배우고 노력하겠습니다.</p> <br>
+    <p class="ct_content" id="p_ct2">읽어주셔서 감사합니다!</p> <br>
+</section>
+
+<section id="sec_footer">
+    <p id = "p_powerd">Powerd by ppusda</p>
+    <button id = "btn_git" onclick = "location.href = 'https://github.com/ppusda/'">
+    <button id = "btn_nb" onclick = "location.href = 'https://blog.naver.com/PostList.nhn?blogId=ppusda'"/>
+</section>
+
+</body>
+</html>
