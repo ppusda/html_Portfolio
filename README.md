@@ -1,3 +1,3 @@
-# web_Portfolio - https://ppusda.github.io/web_Portfolio/
+# web_Portfolio - https://ppusda.github.io/html_Portfolio/
 
 <img src = "main.PNG"/>
